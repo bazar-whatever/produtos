@@ -337,30 +337,27 @@ function initSearch() {
 
 // ── Init ─────────────────────────────────────────────────────────
 
-async function init() {
-  try {
-    const res = await fetch('./data/products.json');
-    const data = await res.json();
-
-    state.products = data.products || [];
-    state.categories = data.categories || [];
-    state.stores = data.stores || [];
-
-    renderStats();
-    renderChips();
-    renderGrid();
-    initSearch();
-
-    window.addEventListener('hashchange', handleHash);
-    handleHash();
-
-  } catch (err) {
-    console.error('Erro ao carregar produtos:', err);
+function init() {
+  const data = window.CATALOG;
+  if (!data) {
     const grid = document.getElementById('products-grid');
     if (grid) {
-      grid.innerHTML = `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Erro ao carregar produtos.</p></div>`;
+      grid.innerHTML = `<div class="empty-state"><div class="empty-icon">⚠️</div><p>Catálogo não encontrado. Verifique se data/products.js está carregado.</p></div>`;
     }
+    return;
   }
+
+  state.products = data.products || [];
+  state.categories = data.categories || [];
+  state.stores = data.stores || [];
+
+  renderStats();
+  renderChips();
+  renderGrid();
+  initSearch();
+
+  window.addEventListener('hashchange', handleHash);
+  handleHash();
 }
 
 document.addEventListener('DOMContentLoaded', init);
