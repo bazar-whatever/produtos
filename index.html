@@ -7,24 +7,23 @@
   <meta name="theme-color" content="#7B2CFF">
   <title>WhateverBazar — Melhores produtos, melhores preços</title>
 
-  <!-- Open Graph -->
   <meta property="og:title" content="WhateverBazar">
   <meta property="og:description" content="Os melhores produtos nas melhores lojas. Curta e compre!">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/logo-dark.png">
 
+  <link rel="icon" type="image/png" href="./assets/logo-app-icon.png">
   <link rel="stylesheet" href="./css/style.css">
-
-  <!-- Favicon inline SVG -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='url(%23g)'/><defs><linearGradient id='g' x1='0' y1='0' x2='100%25' y2='100%25'><stop offset='0' stop-color='%237B2CFF'/><stop offset='100%25' stop-color='%2300F0CB'/></linearGradient></defs><text y='.9em' font-size='70' x='12'>W</text></svg>">
 </head>
 <body>
 
   <!-- ── Header ─────────────────────────────────────────────── -->
   <header class="header">
     <div class="header-inner">
-      <a href="#" class="logo" onclick="goHome()">
-        <div class="logo-icon">W</div>
-        <span class="logo-text gradient-text">WhateverBazar</span>
+      <a href="#" class="logo" onclick="goHome(); return false;">
+        <img src="./assets/logo-circle.png" alt="W" class="logo-icon-img">
+        <img src="./assets/logo-dark-transparent.png" alt="Whatever" class="logo-wordmark">
+        <span class="logo-bazar">Bazar</span>
       </a>
 
       <div class="header-search">
@@ -35,7 +34,7 @@
       </div>
 
       <nav class="header-nav">
-        <a href="https://www.ftw.com.br" target="_blank" rel="noopener" style="color:var(--text-muted);font-size:13px;text-decoration:none;">FTW</a>
+        <a href="https://www.ftw.com.br" target="_blank" rel="noopener" class="nav-link">FTW</a>
       </nav>
     </div>
   </header>
@@ -45,11 +44,14 @@
 
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-glow"></div>
       <div class="hero-content">
-        <h1 class="gradient-text">Whatever<br>você precisar</h1>
-        <p>Os melhores produtos selecionados das maiores lojas do Brasil. Suplementos, eletrodomésticos, móveis e muito mais.</p>
+        <div class="hero-logo-wrap">
+          <img src="./assets/logo-dark-transparent.png" alt="Whatever" class="hero-logo">
+          <span class="hero-logo-bazar">Bazar</span>
+        </div>
+        <p>Os melhores produtos selecionados das maiores lojas do Brasil.<br>Suplementos, eletrodomésticos, móveis e muito mais.</p>
         <div class="hero-stats" id="hero-stats">
-          <!-- Preenchido via JS -->
           <div class="hero-stat">
             <span class="hero-stat-num gradient-text">10+</span>
             <span class="hero-stat-label">Produtos</span>
@@ -72,15 +74,11 @@
     <section class="filters-section">
       <div class="filter-group">
         <span class="filter-label">Categoria</span>
-        <div class="filter-chips" id="category-chips">
-          <!-- Preenchido via JS -->
-        </div>
+        <div class="filter-chips" id="category-chips"></div>
       </div>
       <div class="filter-group">
         <span class="filter-label">Loja</span>
-        <div class="filter-chips" id="store-chips">
-          <!-- Preenchido via JS -->
-        </div>
+        <div class="filter-chips" id="store-chips"></div>
       </div>
     </section>
 
@@ -90,7 +88,6 @@
         <h2 class="section-title">Produtos em Destaque</h2>
         <span class="result-count" id="result-count">— produtos</span>
       </div>
-
       <div class="products-grid" id="products-grid">
         <div class="loading">
           <div class="spinner"></div>
@@ -103,22 +100,24 @@
 
   <!-- ── Product Page ────────────────────────────────────────── -->
   <div id="page-product">
-    <div id="product-content" class="product-page">
-      <!-- Preenchido via JS -->
-    </div>
+    <div id="product-content" class="product-page"></div>
   </div>
 
   <!-- ── Footer ─────────────────────────────────────────────── -->
   <footer class="footer">
-    <div class="neon-line" style="margin-bottom:40px;"></div>
+    <div class="neon-line"></div>
     <div class="footer-inner">
-      <div class="footer-logo gradient-text">WhateverBazar</div>
+      <div class="footer-logo-wrap">
+        <img src="./assets/logo-dark-transparent.png" alt="Whatever" class="footer-logo-img">
+        <span class="footer-logo-bazar">Bazar</span>
+      </div>
       <p class="footer-text">
         Curadoria dos melhores produtos nas maiores lojas do Brasil.<br>
         Mercado Livre · Amazon · AliExpress · Shopee
       </p>
       <p class="footer-disclaimer">
-        * Este site contém links de afiliados. Ao comprar por eles, você apoia o canal sem pagar nada a mais. Os preços e disponibilidade são de responsabilidade das lojas parceiras.
+        * Este site contém links de afiliados. Ao comprar por eles, você apoia o canal sem pagar nada a mais.
+        Os preços e disponibilidade são de responsabilidade das lojas parceiras.
       </p>
     </div>
   </footer>

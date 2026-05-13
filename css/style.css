@@ -77,29 +77,36 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   text-decoration: none;
-}
-
-.logo-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--gradient-main);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 18px;
-  color: white;
-  box-shadow: var(--glow-roxo);
   flex-shrink: 0;
 }
 
-.logo-text {
-  font-size: 22px;
-  font-weight: 800;
+.logo-icon-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.logo-wordmark {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.logo-bazar {
+  font-size: 20px;
+  font-weight: 900;
   letter-spacing: -0.5px;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 1px;
+  flex-shrink: 0;
 }
 
 .header-search {
@@ -146,30 +153,50 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 80px 24px 60px;
+  padding: 64px 24px 56px;
   text-align: center;
 }
 
-.hero::before {
-  content: '';
+.hero-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(123,44,255,0.3) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(123,44,255,0.35) 0%, transparent 70%);
   pointer-events: none;
 }
 
 .hero-content { position: relative; max-width: 700px; margin: 0 auto; }
 
-.hero h1 {
-  font-size: clamp(36px, 6vw, 72px);
+/* Logo block in hero */
+.hero-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.hero-logo {
+  height: clamp(80px, 14vw, 130px);
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.hero-logo-bazar {
+  font-size: clamp(40px, 7vw, 68px);
   font-weight: 900;
   letter-spacing: -2px;
-  line-height: 1.05;
-  margin-bottom: 16px;
+  line-height: 1;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 4px;
+  padding-bottom: 6px;
 }
 
 .hero p {
-  font-size: clamp(15px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 17px);
   color: var(--text-secondary);
   max-width: 500px;
   margin: 0 auto 32px;
@@ -700,24 +727,44 @@ body {
 
 /* ── Footer ──────────────────────────────────────────────── */
 .footer {
-  border-top: 1px solid var(--dark-border);
-  padding: 40px 24px;
+  padding: 0 24px 40px;
   text-align: center;
 }
 
 .footer-inner {
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 40px;
 }
 
-.footer-logo {
-  font-size: 24px;
+.footer-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.footer-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.footer-logo-bazar {
+  font-size: 28px;
   font-weight: 900;
-  margin-bottom: 8px;
+  letter-spacing: -1px;
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 4px;
 }
 
 .footer-text {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -726,7 +773,7 @@ body {
   margin-top: 16px;
   font-size: 11px;
   color: var(--text-muted);
-  opacity: 0.6;
+  opacity: 0.5;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -762,10 +809,20 @@ body {
   margin: 0;
 }
 
+.nav-link {
+  color: var(--text-muted);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.nav-link:hover { color: var(--lilas); }
+
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   .header-search { display: none; }
-  .hero { padding: 50px 20px 40px; }
+  .logo-wordmark, .logo-bazar { display: none; }
+  .hero { padding: 40px 16px 36px; }
+  .hero-logo { height: clamp(60px, 20vw, 90px); }
   .hero-stats { gap: 24px; }
   .products-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
   .product-card-body { padding: 12px; }
