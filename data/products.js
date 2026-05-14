@@ -91,6 +91,79 @@ window.CATALOG = {
       "tags": ["soprador", "turbo", "usb", "recarregavel", "limpeza", "teclado", "carro", "churrasqueira", "portatil", "sem fio"],
       "inStock": true,
       "featured": true
-    }
+    },
+    {
+
+  "id": "medidor-pressao-digital-bahrein",
+
+  "name": "Aparelho Medidor de Pressão Arterial Digital Automático de Braço Bahrein",
+
+  "shortDescription": "Medidor digital automático de pressão arterial com visor LCD, braçadeira ajustável e medição de batimentos cardíacos.",
+
+  "description": "Aparelho digital automático para medição de pressão arterial e frequência cardíaca, ideal para uso doméstico. Possui visor LCD de fácil leitura, operação simples com um botão e braçadeira ajustável para diferentes tamanhos de braço. O modelo conta com memória de medições e desligamento automático para economia de bateria.\n\nIndicado para monitoramento diário da pressão arterial em adultos, oferecendo praticidade e rapidez na medição. Compacto e leve, pode ser utilizado em casa ou transportado facilmente.",
+
+  "price": 39.90,
+
+  "originalPrice": 79.90,
+
+  "discount": 50,
+
+  "pixPrice": null,
+
+  "category": "tecnologia",
+
+  "type": "medidor-pressao",
+
+  "store": "mercadolivre",
+
+  "affiliateLink": "https://www.mercadolivre.com.br/aparelho-medidor-de-presso-arterial-digital-pulso-branco-domestico-uso-residencial-presso-arterial-braco-bracadeira-manguito-ajustavel-medir-pressao-aferidor-p-adultos-ou-criancas-marca-bahrein/p/MLB64846055",
+
+  "brand": "Bahrein",
+
+  "rating": 4.7,
+
+  "reviews": 1000,
+
+  "images": {
+
+    "main": "https://http2.mlstatic.com/D_NQ_NP_2X_846552-MLU72580576928_112023-F.webp",
+
+    "gallery": [
+
+      "https://http2.mlstatic.com/D_NQ_NP_2X_846552-MLU72580576928_112023-F.webp",
+
+      "https://http2.mlstatic.com/D_NQ_NP_2X_951516-MLU72580576930_112023-F.webp",
+
+      "https://http2.mlstatic.com/D_NQ_NP_2X_858236-MLU72580576932_112023-F.webp"
+
+    ]
+
+  },
+
+  "specs": {
+
+    "Tipo": "Digital automático",
+
+    "Medição": "Pressão arterial e batimentos cardíacos",
+
+    "Visor": "LCD",
+
+    "Braçadeira": "Ajustável",
+
+    "Uso": "Doméstico",
+
+    "Alimentação": "Pilhas",
+
+    "Cor": "Branco"
+
+  },
+
+  "tags": ["pressao", "medidor", "pressao arterial", "digital", "saude", "bahrein", "automatico", "lcd", "braçadeira", "batimentos"],
+
+  "inStock": true,
+
+  "featured": false
+
+}
   ]
 };
