@@ -93,77 +93,61 @@ window.CATALOG = {
       "featured": true
     },
     {
-
-  "id": "medidor-pressao-digital-bahrein",
-
-  "name": "Aparelho Medidor de Pressão Arterial Digital Automático de Braço Bahrein",
-
-  "shortDescription": "Medidor digital automático de pressão arterial com visor LCD, braçadeira ajustável e medição de batimentos cardíacos.",
-
-  "description": "Aparelho digital automático para medição de pressão arterial e frequência cardíaca, ideal para uso doméstico. Possui visor LCD de fácil leitura, operação simples com um botão e braçadeira ajustável para diferentes tamanhos de braço. O modelo conta com memória de medições e desligamento automático para economia de bateria.\n\nIndicado para monitoramento diário da pressão arterial em adultos, oferecendo praticidade e rapidez na medição. Compacto e leve, pode ser utilizado em casa ou transportado facilmente.",
-
-  "price": 39.90,
-
-  "originalPrice": 79.90,
-
-  "discount": 50,
-
-  "pixPrice": null,
-
-  "category": "tecnologia",
-
-  "type": "medidor-pressao",
-
-  "store": "mercadolivre",
-
-  "affiliateLink": "https://www.mercadolivre.com.br/aparelho-medidor-de-presso-arterial-digital-pulso-branco-domestico-uso-residencial-presso-arterial-braco-bracadeira-manguito-ajustavel-medir-pressao-aferidor-p-adultos-ou-criancas-marca-bahrein/p/MLB64846055",
-
-  "brand": "Bahrein",
-
-  "rating": 4.7,
-
-  "reviews": 1000,
-
-  "images": {
-
-    "main": "https://http2.mlstatic.com/D_NQ_NP_2X_846552-MLU72580576928_112023-F.webp",
-
-    "gallery": [
-
-      "https://http2.mlstatic.com/D_NQ_NP_2X_846552-MLU72580576928_112023-F.webp",
-
-      "https://http2.mlstatic.com/D_NQ_NP_2X_951516-MLU72580576930_112023-F.webp",
-
-      "https://http2.mlstatic.com/D_NQ_NP_2X_858236-MLU72580576932_112023-F.webp"
-
-    ]
-
-  },
-
-  "specs": {
-
-    "Tipo": "Digital automático",
-
-    "Medição": "Pressão arterial e batimentos cardíacos",
-
-    "Visor": "LCD",
-
-    "Braçadeira": "Ajustável",
-
-    "Uso": "Doméstico",
-
-    "Alimentação": "Pilhas",
-
-    "Cor": "Branco"
-
-  },
-
-  "tags": ["pressao", "medidor", "pressao arterial", "digital", "saude", "bahrein", "automatico", "lcd", "braçadeira", "batimentos"],
-
-  "inStock": true,
-
-  "featured": false
-
-}
+      "id": "medidor-pressao-bahrein-digital-braco",
+      "name": "Aparelho Medidor De Pressão Arterial Digital Automático De Braço Bahrein",
+      "shortDescription": "Medidor digital automático de braço com visor LCD, inflagem automática, indicador de movimento e braçadeira ajustável.",
+      "description": "Monitor de pressão arterial digital automático da marca Bahrein, ideal para uso doméstico e acompanhamento diário da pressão arterial. Possui medição automática no braço, visor LCD de fácil leitura e sistema de inflagem automática.\n\nO aparelho conta com indicador de erro de movimento, memória para múltiplos usuários e acompanha braçadeira ajustável e estojo para transporte. Compacto, portátil e simples de usar, é indicado para adultos e crianças.\n\nModelo bastante vendido no Mercado Livre pelo custo-benefício e praticidade para medições rápidas em casa.",
+      "price": 39.90,
+      "originalPrice": 84.90,
+      "discount": 53,
+      "pixPrice": null,
+      "category": "tecnologia",
+      "type": "medidor-pressao",
+      "store": "mercadolivre",
+      "affiliateLink": "https://meli.la/1W7Epk3",
+      "brand": "Bahrein",
+      "rating": 4.8,
+      "reviews": 202,
+     "images": {
+        "main": "https://http2.mlstatic.com/D_NQ_NP_2X_964206-MLA105767687161_012026-F.webp",
+        "gallery": [
+          "https://http2.mlstatic.com/D_NQ_NP_2X_964206-MLA105767687161_012026-F.webp",
+          "https://http2.mlstatic.com/D_NQ_NP_2X_778186-MLA105767687163_012026-F.webp",
+          "https://http2.mlstatic.com/D_NQ_NP_2X_680020-MLA105767687165_012026-F.webp",
+          "https://http2.mlstatic.com/D_NQ_NP_2X_901003-MLA105767687167_012026-F.webp"
+        ]
+      },
+      "specs": {
+        "Marca": "Bahrein",
+        "Modelo": "BAHREIN-5488",
+        "Tipo": "Digital automático de braço",
+        "Medições": "Pressão sistólica",
+        "Inflagem": "Automática",
+        "Usuários": "2",
+        "Memória": "2 medições",
+        "Braçadeira": "13,6 cm até 19,5 cm",
+        "Indicador de movimento": "Sim",
+        "Inclui estojo": "Sim",
+        "Alimentação": "Pilhas AAA",
+        "Bluetooth": "Não",
+        "Cor": "Branco"
+      },
+      "tags": [
+        "pressao",
+        "medidor",
+        "pressao arterial",
+        "digital",
+        "bahrein",
+        "automatico",
+        "lcd",
+        "saude",
+        "braço",
+        "tensiometro",
+        "aferidor",
+        "batimentos"
+      ],
+      "inStock": true,
+      "featured": false
+    }
   ]
 };
